@@ -90,3 +90,29 @@ function regnDenUd (nero, caecer) {
 
 console.log( regnDenUd( 666, 777 ) );
 console.log( regnDenUd(2345, 5678) );
+
+// function navn( parameter, par2, par3 ) {
+function visEtBillede( filen ) {
+    galleri.innerHTML += "<div>";
+    galleri.innerHTML += "<img src="'../images + filen + "'>";
+    galleri.innerHTML += "</div>";
+}
+
+// funktionen kaldes
+visEtBillede('helloween.jpg');
+visEtBillede('marselis.jpg');
+
+// conditionals
+let a = 2;
+let b = 345;
+
+if (a < b) {
+  //  block of code to be executed if the condition is true
+    console.log(a + " er mindre end " + b);
+}
+
+// tilfældige tal --- spil ...
+let etTalLissom = Math.floor( Math.random() * kort.length ); 
+console.log( kort[etTalLissom] );
+
+

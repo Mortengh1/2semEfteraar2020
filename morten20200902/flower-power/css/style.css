@@ -1,0 +1,41 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+body {
+    background-image: url(../images/space.jpg);
+    color: white;
+    overflow: hidden;
+}
+
+#scene {
+    height: 700px;
+    width: 100%;
+}
+
+button {
+    background-image: linear-gradient(to right, #50C9C3, #96DEDA, #50C9C3);
+    border-radius: 25px;
+    border: 3px solid #50C9C3;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-position: right center;
+    background: transparent;
+    border: 3px solid #50C9C3;
+    color: white;
+    cursor: pointer;
+}
+
+
+.red {
+    position: relative;
+}

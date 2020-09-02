@@ -1,0 +1,31 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+body {
+  background: url(../images/space.jpg);
+    height: 100%;
+     background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-color: black;
+}
+h1, p {color: #fff;}
+
+#ufo {
+  width: 125px;
+  height: 125px;
+}
+@keyframes example {
+  0%  {transform: rotate(0deg); left:0px; top:0px;}
+  25%  {transform: rotate(90deg); left:1000px; top:0px;}
+  50%  {transform: rotate(180deg); left:1000px; top:400px;}
+  75%  {transform: rotate(270deg); left:0px; top:400px;}
+  100% {transform: rotate(360deg); left:0px; top:0px;}
+}
+.animate {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
